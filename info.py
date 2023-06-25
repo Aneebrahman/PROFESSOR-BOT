@@ -64,13 +64,14 @@ SHORT_API = environ.get("SHORT_API")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001506481594))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mkn_bots_updates')
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
 SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>•────•────────•────•<\b>\n\n🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴩ : <a href='https://t.me/MH_moviesgroup01'>Cʟɪᴄᴋ Hᴇʀᴇ</a>\n🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴩ 2 : <a href='https://t.me/MM_MalluMoviesGroup2'>Cʟɪᴄᴋ Hᴇʀᴇ</a>\n📢 Mᴏᴠɪᴇ Uᴩᴅᴀᴛᴇꜱ : <a href='https://t.me/+2p4g9JuMTBY1N2M1'>Cʟɪᴄᴋ Hᴇʀᴇ</a>\n\n<b>•────•────────•────•<\b>
+🎗 ʝσιи • ѕнαяє • ѕυρρσят 🎗")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
